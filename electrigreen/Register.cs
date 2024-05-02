@@ -36,6 +36,9 @@ namespace electrigreen
             else
             {
                 Console.WriteLine("Password salah, coba lagi.");
+                Console.Write("\nKonfirmasi Password: ");
+                string passConfirm = Console.ReadLine();
+                RegisterNewAccount(account, password, passConfirm);
             }
         }
 
@@ -59,6 +62,7 @@ namespace electrigreen
 
         public Account(string name, string email, string password)
         {
+
             Name = name;
             Email = email;
             Password = password;

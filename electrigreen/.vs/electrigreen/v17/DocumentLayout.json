@@ -1,17 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\electrigreen-tubesKPL\\electrigreen\\",
+  "WorkspaceRootPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0C262FCF-8614-4840-A81B-4D7C494229D1}|..\\electrigreenAPI\\electrigreenAPI.csproj|c:\\electrigreen-tubeskpl\\electrigreenapi\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|c:\\electrigreen-tubeskpl\\electrigreen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|c:\\electrigreen-tubeskpl\\electrigreen\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|c:\\users\\swift\\documents\\electrigreen2.0-tubeskpl\\electrigreen2.0\\electrigreen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,43 +18,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Register.cs",
-              "DocumentMoniker": "C:\\electrigreen-tubesKPL\\electrigreen\\Register.cs",
+              "DocumentMoniker": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\Register.cs",
               "RelativeDocumentMoniker": "Register.cs",
-              "ToolTip": "C:\\electrigreen-tubesKPL\\electrigreen\\Register.cs",
+              "ToolTip": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\Register.cs",
               "RelativeToolTip": "Register.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAcwA4AAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T06:10:18.901Z"
+              "WhenOpened": "2024-05-02T14:11:40.321Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\electrigreen-tubesKPL\\electrigreen\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\electrigreen-tubesKPL\\electrigreen\\Program.cs",
+              "ToolTip": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAQwBMAAAAvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIkAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T04:48:09.023Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RegisterController.cs",
-              "DocumentMoniker": "C:\\electrigreen-tubesKPL\\electrigreenAPI\\Controllers\\RegisterController.cs",
-              "RelativeDocumentMoniker": "..\\electrigreenAPI\\Controllers\\RegisterController.cs",
-              "ToolTip": "C:\\electrigreen-tubesKPL\\electrigreenAPI\\Controllers\\RegisterController.cs",
-              "RelativeToolTip": "..\\electrigreenAPI\\Controllers\\RegisterController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T04:49:22.643Z",
+              "WhenOpened": "2024-05-02T14:11:37.547Z",
               "EditorCaption": ""
             }
           ]
