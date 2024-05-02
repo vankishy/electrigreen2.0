@@ -1,0 +1,6 @@
+@electrigreenAPI_HostAddress = http://localhost:5107
+
+GET {{electrigreenAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

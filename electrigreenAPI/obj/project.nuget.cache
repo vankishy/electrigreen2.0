@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "dH/lcP4XFkliE76PcbeRJ7025JjSwHKI3I9UC0xGm6dSWM+Vk56SxS24yKIOYC4D7jzS1h0FQauuKFDrXswVoA==",
+  "success": true,
+  "projectFilePath": "C:\\electrigreen-tubesKPL\\electrigreenAPI\\electrigreenAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Motion Laboratory\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Motion Laboratory\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Motion Laboratory\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\Motion Laboratory\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\Motion Laboratory\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\Motion Laboratory\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
