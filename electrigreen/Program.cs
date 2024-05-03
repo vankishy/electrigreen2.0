@@ -1,4 +1,6 @@
 ﻿using electrigreen;
+using System.Net;
+using System.Text;
 
 interface IMenuState
 {
@@ -103,7 +105,7 @@ class Register : IMenuState
 {
     public void HandleOutput(MenuContext context)
     {
-        Register<Account> register = new Register<Account>();
+        //Register<RegAccount> register = new Register<RegAccount>();
 
         Console.Write("Nama: ");
         string nama = Console.ReadLine();
@@ -111,14 +113,29 @@ class Register : IMenuState
         string email = Console.ReadLine();
         Console.Write("Password: ");
         string password = Console.ReadLine();
-        Account fieldAccount = new Account(nama, email, password);
+        RegAccount fieldAccount = new RegAccount(nama, email, password);
 
         Console.Write("Konfirmasi Password: ");
         string passConfirm = Console.ReadLine();
-        register.RegisterNewAccount(fieldAccount, password, passConfirm);
+        while (password != passConfirm)
+        {
+            Console.WriteLine("Try Again!");
+        }
+        string postData = $"nama={WebUtility.UrlEncode(nama)}&email={WebUtility.UrlEncode(email)}&password={WebUtility.UrlEncode(password)}";
 
-        Console.Clear();
-        context.ChangeState(new InitialMenuState());
+        using (WebClient client = new WebClient())
+        {
+            client.Headers[HttpRequestHeader.ContentType] = "application/api";
+
+            byte[] responseBytes= client.UploadData("http://localhost:5107/api/Register", "POST", Encoding.UTF8.GetBytes(postData));
+            string response = Encoding.UTF8.GetString(responseBytes);
+
+            Console.WriteLine(response);
+        }
+        //register.RegisterNewAccount(fieldAccount, password, passConfirm);
+
+        //Console.Clear();
+        //context.ChangeState(new InitialMenuState());
     }
 }
 

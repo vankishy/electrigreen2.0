@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using electrigreenAPI.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Runtime.CompilerServices;
 
@@ -8,44 +9,52 @@ namespace electrigreenAPI.Controllers
     [ApiController]
     public class RegisterController : ControllerBase
     {
-        private static List<Register> listRegister = new List<Register>
-        {
-            new Register()
-            {
-                
-            }
-        };
+        private readonly List<User> _users = new List<User>();
         // GET: api/<ValuesController>
-        [HttpGet]
-        public IEnumerable<Register> Get()
+        /*[HttpGet]
+        public IEnumerable<RegisterModel> Get()
         {
-            return listRegister;
-        }
+            return _users;
+        }*/
 
         // GET api/<ValuesController>/s
         [HttpGet("{id}")]
-        public Register Get(int id)
+        public IActionResult GetUserById(Guid id)
         {
-            return listRegister[id];
+            var user = _users.FirstOrDefault(u => u.ID == id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(user);
         }
 
         // POST api/<ValuesController>
         [HttpPost]
-        public void Post([FromBody] Register value)
+        public IActionResult Register(RegisterModel model)
         {
-            listRegister.Add(value);
+            if (_users.Any(u => u.email == model.email))
+            {
+                return Conflict("Username sudah digunakan");
+            }
+
+            var user = new User { ID = Guid.NewGuid(), nama = model.nama, email = model.email, password = model.password };
+            _users.Add(user);
+
+            return CreatedAtAction(nameof(GetUserById), new { ID = user.ID});
         }
 
         // PUT api/<ValuesController>
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Register value)
+        /*[HttpPut("{id}")]
+        public void Put(int id, [FromBody] RegisterModel value)
         {
-            listRegister[id] = value;
+            _listRegister[id] = value;
         }
 
         [HttpDelete("{id}")]
         public void Delete(int id) {
-            listRegister.RemoveAt(id);
-        }
+            _listRegister.RemoveAt(id);
+        }*/
     }
 }

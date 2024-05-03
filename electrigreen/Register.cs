@@ -54,13 +54,13 @@ namespace electrigreen
         }
     }
 
-    public class Account
+    public class RegAccount
     {
         public string Name { get; }
         public string Email { get; }
         public string Password { get; }
 
-        public Account(string name, string email, string password)
+        public RegAccount(string name, string email, string password)
         {
 
             Name = name;
