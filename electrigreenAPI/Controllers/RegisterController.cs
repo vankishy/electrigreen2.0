@@ -1,7 +1,11 @@
-﻿using electrigreenAPI.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System.Runtime.CompilerServices;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.Json;
+using System.Text;
+using electrigreenAPI.Models;
+using electrigreen;
 
 namespace electrigreenAPI.Controllers
 {
@@ -9,52 +13,88 @@ namespace electrigreenAPI.Controllers
     [ApiController]
     public class RegisterController : ControllerBase
     {
-        private readonly List<User> _users = new List<User>();
-        // GET: api/<ValuesController>
-        /*[HttpGet]
-        public IEnumerable<RegisterModel> Get()
+        private const string filePath = "accRecord.json";
+        private List<RegisterModel> _users;
+
+        public RegisterController()
         {
-            return _users;
+            GetRecord();
+        }
+
+        private void GetRecord()
+        {
+            if (System.IO.File.Exists(filePath))
+            {
+                string json = System.IO.File.ReadAllText(filePath);
+                _users = JsonSerializer.Deserialize<List<RegisterModel>>(json);
+            }
+            else
+            {
+                _users = new List<RegisterModel>();
+            }
+        }
+
+        private void SaveRecord()
+        {
+            string json = JsonSerializer.Serialize(_users);
+            System.IO.File.WriteAllText(filePath, json);
+        }
+
+        [HttpGet("{nama}")]
+        public IActionResult GetUserbyName(string nama)
+        {
+            if (_users.Count == 0)
+            {
+                return Ok("Data tidak ada");
+            }
+
+            foreach (RegisterModel user in _users)
+            {
+                if (user.nama == nama)
+                {
+                    return Ok(user);
+                }
+            }
+            return Ok("Data tidak ada");
+        }
+    
+
+
+        [HttpPost("register")]
+        public IActionResult Register(RegisterModel model)
+        {
+            if (_users.Any(u => u.email == model.email))
+            {
+                return Conflict("hasBeenUsed");
+            }
+
+            _users.Add(model);
+            SaveRecord();
+            return Ok("Akun terdaftar");
+        }
+
+        /*[HttpPost("login")]
+        public IActionResult Login(LoginModel model)
+        {
+            var user = _users.FirstOrDefault(u => u.Email == model.Email && u.Password == model.Password);
+            if (user == null)
+            {
+                return NotFound("Email atau password salah.");
+            }
+
+            return Ok(user);
         }*/
 
-        // GET api/<ValuesController>/s
-        [HttpGet("{id}")]
+        /*[HttpGet("{id}")]
         public IActionResult GetUserById(Guid id)
         {
-            var user = _users.FirstOrDefault(u => u.ID == id);
+            var user = _users.FirstOrDefault(u => u.Id == id);
             if (user == null)
             {
                 return NotFound();
             }
 
             return Ok(user);
-        }
-
-        // POST api/<ValuesController>
-        [HttpPost]
-        public IActionResult Register(RegisterModel model)
-        {
-            if (_users.Any(u => u.email == model.email))
-            {
-                return Conflict("Username sudah digunakan");
-            }
-
-            var user = new User { ID = Guid.NewGuid(), nama = model.nama, email = model.email, password = model.password };
-            _users.Add(user);
-
-            return CreatedAtAction(nameof(GetUserById), new { ID = user.ID});
-        }
-
-        // PUT api/<ValuesController>
-        /*[HttpPut("{id}")]
-        public void Put(int id, [FromBody] RegisterModel value)
-        {
-            _listRegister[id] = value;
-        }
-
-        [HttpDelete("{id}")]
-        public void Delete(int id) {
-            _listRegister.RemoveAt(id);
         }*/
     }
 }

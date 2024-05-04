@@ -1,5 +1,9 @@
 ﻿using electrigreen;
 using System.Net;
+using System.Net.Http;
+using System.Net.Http.Json;
+using System.Reflection.Metadata;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 interface IMenuState
@@ -103,9 +107,10 @@ class ExitMenuState : IMenuState
 
 class Register : IMenuState
 {
-    public void HandleOutput(MenuContext context)
+    public async void HandleOutput(MenuContext context)
     {
-        //Register<RegAccount> register = new Register<RegAccount>();
+        HttpClient httpClient = new HttpClient();
+        httpClient.BaseAddress = new Uri("http://localhost:5107");
 
         Console.Write("Nama: ");
         string nama = Console.ReadLine();
@@ -113,31 +118,53 @@ class Register : IMenuState
         string email = Console.ReadLine();
         Console.Write("Password: ");
         string password = Console.ReadLine();
-        RegAccount fieldAccount = new RegAccount(nama, email, password);
+
 
         Console.Write("Konfirmasi Password: ");
         string passConfirm = Console.ReadLine();
+
         while (password != passConfirm)
         {
             Console.WriteLine("Try Again!");
         }
-        string postData = $"nama={WebUtility.UrlEncode(nama)}&email={WebUtility.UrlEncode(email)}&password={WebUtility.UrlEncode(password)}";
 
-        using (WebClient client = new WebClient())
+        User createUser = new User { Nama = nama, Email = email, Password = password };
+        HttpResponseMessage resMessage = await httpClient.PostAsJsonAsync("api/Register/register", createUser);
+
+        if (resMessage.IsSuccessStatusCode)
         {
-            client.Headers[HttpRequestHeader.ContentType] = "application/api";
-
-            byte[] responseBytes= client.UploadData("http://localhost:5107/api/Register", "POST", Encoding.UTF8.GetBytes(postData));
-            string response = Encoding.UTF8.GetString(responseBytes);
-
-            Console.WriteLine(response);
+            string resBodyRegister = await resMessage.Content.ReadAsStringAsync();
+            Console.WriteLine("Response Register : " + resBodyRegister);
         }
+        else if (resMessage.StatusCode == System.Net.HttpStatusCode.BadRequest)
+        {
+            string errMessage = await resMessage.Content.ReadAsStringAsync();
+            Console.WriteLine("Failed to Register, Error : " + errMessage);
+        }
+        else
+        {
+            string errMessage = await resMessage.Content.ReadAsStringAsync();
+            if (errMessage.Contains("hasBeenUsed"))
+            {
+                Console.WriteLine("Email sudah terdaftar, Coba lagi!");               
+            }
+            else
+            {
+                Console.WriteLine("Failed to Register, Error : " + resMessage.StatusCode);
+            }
+            Console.Clear();
+            context.ChangeState(new AuthScreen());
+        }
+
+
+
         //register.RegisterNewAccount(fieldAccount, password, passConfirm);
 
         //Console.Clear();
         //context.ChangeState(new InitialMenuState());
     }
 }
+
 
 class Program
 {
