@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\electrigreen-tubesKPL\\electrigreenAPI\\electrigreenAPI.csproj": {}
+    "C:\\Users\\RAFLI\\Downloads\\Percodingan\\C#\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {}
   },
   "projects": {
-    "C:\\electrigreen-tubesKPL\\electrigreenAPI\\electrigreenAPI.csproj": {
+    "C:\\Users\\RAFLI\\Downloads\\Percodingan\\C#\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\electrigreen-tubesKPL\\electrigreenAPI\\electrigreenAPI.csproj",
+        "projectUniqueName": "C:\\Users\\RAFLI\\Downloads\\Percodingan\\C#\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
         "projectName": "electrigreenAPI",
-        "projectPath": "C:\\electrigreen-tubesKPL\\electrigreenAPI\\electrigreenAPI.csproj",
-        "packagesPath": "C:\\Users\\Motion Laboratory\\.nuget\\packages\\",
-        "outputPath": "C:\\electrigreen-tubesKPL\\electrigreenAPI\\obj\\",
+        "projectPath": "C:\\Users\\RAFLI\\Downloads\\Percodingan\\C#\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
+        "packagesPath": "C:\\Users\\RAFLI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RAFLI\\Downloads\\Percodingan\\C#\\electrigreen2.0\\electrigreenAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Motion Laboratory\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RAFLI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -69,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

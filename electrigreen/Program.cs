@@ -1,23 +1,34 @@
 ﻿using electrigreen;
+using System;
+using static MenampilkanDaftarPerangkat;
 class Program
 {
     private static void Main(string[] args)
     {
-        Register<Account> register = new Register<Account>();
+        //Uji Defensive Programming 1
+        try
+        {
+            string perangkat1 = PerangkatHelper<int>.GetJenisPerangkat(1);
+        }
+        catch (ArgumentException ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
 
-        Console.Write("Nama: ");
-        string nama = Console.ReadLine();
-        Console.Write("Email: ");
-        string email = Console.ReadLine();
-        Console.Write("Password: ");
-        string password = Console.ReadLine();
-        Account johnAccount = new Account(nama, email, password);
+        // Uji Defensive Programming 2
+        try
+        {
+            EnumNamaPerangkat perangkat2 = (EnumNamaPerangkat)99;
+            string jenisPerangkat2 = PerangkatHelper<EnumNamaPerangkat>.GetJenisPerangkat(perangkat2);
+        }
+        catch (ArgumentException ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
 
-        Console.Write("Konfirmasi Password: ");
-        string passConfirm = Console.ReadLine();
-        register.RegisterNewAccount(johnAccount, password, passConfirm);
-
-        Console.WriteLine("\nAkun Terdaftar:");
-        register.DisplayAccounts();
+        // Uji valid
+        EnumNamaPerangkat perangkat = EnumNamaPerangkat.Macbook_Air;
+        string jenisPerangkat = PerangkatHelper<EnumNamaPerangkat>.GetJenisPerangkat(perangkat);
+        Console.WriteLine(jenisPerangkat);
     }
 }
