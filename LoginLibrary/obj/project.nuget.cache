@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dge54ALpG261ZjLz0XBWXXjhpeoPk/ZVQ3iaE54Benu5x6AXvrw2NbGWbREkNId5ZvRaARTi/ZnEsQb0pC/k2Q==",
+  "dgSpecHash": "XlrXA5eGNerQPA/mCjC9tYJY3JzQoVbCeUgdlB9DiFHI0wGMODya2XMMJxrg4kBvGdHpkma3TId/TjocRFdZeA==",
   "success": true,
-  "projectFilePath": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
+  "projectFilePath": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\RIZKY KUSUMA\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.4\\microsoft.aspnetcore.jsonpatch.8.0.4.nupkg.sha512",
     "C:\\Users\\RIZKY KUSUMA\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\8.0.4\\microsoft.aspnetcore.mvc.newtonsoftjson.8.0.4.nupkg.sha512",

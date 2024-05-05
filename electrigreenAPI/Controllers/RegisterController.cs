@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Text;
 using electrigreenAPI.Models;
-using electrigreen;
+
 
 namespace electrigreenAPI.Controllers
 {
@@ -72,6 +72,28 @@ namespace electrigreenAPI.Controllers
             SaveRecord();
             return Ok("Akun terdaftar");
         }
+
+        [HttpPost("Login")]
+
+        public IActionResult Login(LoginModel model)
+        {
+            if (model == null)
+            {
+                return BadRequest("Invalid login request");
+            }
+
+            var user = _users.FirstOrDefault(u => u.email.Equals(model.email, StringComparison.OrdinalIgnoreCase) && u.password == model.password);
+
+            if (user != null)
+            {
+                return Ok("Selamat datang " + model.email);
+            }
+            else
+            {
+                return Conflict("Email atau Password Salah");
+            }
+        }
+
 
         /*[HttpPost("login")]
         public IActionResult Login(LoginModel model)
