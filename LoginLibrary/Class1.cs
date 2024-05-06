@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using electrigreenAPI.Models;
-using electrigreenAPI.Authentication;
+﻿using electrigreenAPI.Models;
 
-namespace electrigreenAPI.Authentication
+namespace LoginLibrary
 {
     public class AuthManager
     {

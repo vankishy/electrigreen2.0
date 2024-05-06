@@ -8,8 +8,10 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using electrigreenAPI.Authentication;
 using electrigreenAPI.Models;
+using System.Diagnostics.Contracts;
+using LoginLibrary;
+
 interface IMenuState
 {
     public void HandleOutput(MenuContext context);
@@ -115,25 +117,39 @@ class ExitMenuState : IMenuState
 
 class Register : IMenuState
 {
-    public async void HandleOutput(MenuContext context)
+    public void HandleOutput(MenuContext context)
+    {
+        Reg();
+        Console.Clear();
+        context.ChangeState(new AuthScreen());
+    }
+    public async void Reg()
     {
         HttpClient httpClient = new HttpClient();
         httpClient.BaseAddress = new Uri("http://localhost:5107");
 
         Console.Write("Nama: ");
         string nama = Console.ReadLine();
+        Contract.Requires(!string.IsNullOrWhiteSpace(nama), "Nama tidak boleh kosong");
+
         Console.Write("Email: ");
         string email = Console.ReadLine();
+        Contract.Requires(!string.IsNullOrWhiteSpace(email), "Email tidak boleh kosong");
+
         Console.Write("Password: ");
         string password = Console.ReadLine();
-
+        Contract.Requires(!string.IsNullOrWhiteSpace(password), "Password tidak boleh kosong");
 
         Console.Write("Konfirmasi Password: ");
         string passConfirm = Console.ReadLine();
+        Contract.Requires(!string.IsNullOrWhiteSpace(passConfirm), "Konfirmasi Password tidak boleh kosong");
 
         while (password != passConfirm)
         {
             Console.WriteLine("Password salah! Coba lagi.");
+            Console.Write("Konfirmasi Password: ");
+            passConfirm = Console.ReadLine();
+            Contract.Requires(!string.IsNullOrWhiteSpace(passConfirm), "Konfirmasi Password tidak boleh kosong");
         }
 
         User createUser = new User { Nama = nama, Email = email, Password = password };
@@ -144,7 +160,7 @@ class Register : IMenuState
             string resBodyRegister = await resMessage.Content.ReadAsStringAsync();
             Console.WriteLine("Response Register : " + resBodyRegister);
         }
-        else if (resMessage.StatusCode == System.Net.HttpStatusCode.BadRequest)
+        else if (resMessage.StatusCode == HttpStatusCode.BadRequest)
         {
             string errMessage = await resMessage.Content.ReadAsStringAsync();
             Console.WriteLine("Failed to Register, Error : " + errMessage);
@@ -154,18 +170,16 @@ class Register : IMenuState
             string errMessage = await resMessage.Content.ReadAsStringAsync();
             if (errMessage.Contains("hasBeenUsed"))
             {
-                Console.WriteLine("Email sudah terdaftar, Coba lagi!");               
+                Console.WriteLine("Email sudah terdaftar, Coba lagi!");
             }
             else
             {
                 Console.WriteLine("Failed to Register, Error : " + resMessage.StatusCode);
             }
         }
-
-        Console.Clear();
-        context.ChangeState(new AuthScreen());
-    }  
+    }
 }
+
 
 class Login : IMenuState
 {
@@ -175,8 +189,13 @@ class Login : IMenuState
     {
         _authManager = authManager;
     }
-
-    public async void HandleOutput(MenuContext context)
+    public void HandleOutput(MenuContext context)
+    {
+        loginAccount();
+        Console.Clear();
+        context.ChangeState(new InitialMenuState());
+    }
+    public async void loginAccount()
     {
         using (HttpClient httpClient = new HttpClient())
         {
@@ -206,8 +225,6 @@ class Login : IMenuState
                 Console.WriteLine("An error occurred: " + ex.Message);
             }
         }
-
-        context.ChangeState(new InitialMenuState());
     }
     private async Task<bool> AuthenticateWithAPI(string email, string password)
     {
