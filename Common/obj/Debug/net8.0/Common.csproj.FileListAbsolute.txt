@@ -1,0 +1,15 @@
+D:\C#\tubesKPL\electrigreen2.0\Common\bin\Debug\net8.0\Common.exe
+D:\C#\tubesKPL\electrigreen2.0\Common\bin\Debug\net8.0\Common.deps.json
+D:\C#\tubesKPL\electrigreen2.0\Common\bin\Debug\net8.0\Common.runtimeconfig.json
+D:\C#\tubesKPL\electrigreen2.0\Common\bin\Debug\net8.0\Common.dll
+D:\C#\tubesKPL\electrigreen2.0\Common\bin\Debug\net8.0\Common.pdb
+D:\C#\tubesKPL\electrigreen2.0\Common\obj\Debug\net8.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\tubesKPL\electrigreen2.0\Common\obj\Debug\net8.0\Common.AssemblyInfoInputs.cache
+D:\C#\tubesKPL\electrigreen2.0\Common\obj\Debug\net8.0\Common.AssemblyInfo.cs
+D:\C#\tubesKPL\electrigreen2.0\Common\obj\Debug\net8.0\Common.csproj.CoreCompileInputs.cache
+D:\C#\tubesKPL\electrigreen2.0\Common\obj\Debug\net8.0\Common.sourcelink.json
+D:\C#\tubesKPL\electrigreen2.0\Common\obj\Debug\net8.0\Common.dll
+D:\C#\tubesKPL\electrigreen2.0\Common\obj\Debug\net8.0\refint\Common.dll
+D:\C#\tubesKPL\electrigreen2.0\Common\obj\Debug\net8.0\Common.pdb
+D:\C#\tubesKPL\electrigreen2.0\Common\obj\Debug\net8.0\Common.genruntimeconfig.cache
+D:\C#\tubesKPL\electrigreen2.0\Common\obj\Debug\net8.0\ref\Common.dll

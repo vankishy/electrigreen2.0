@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {}
+    "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {
+    "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
+        "projectUniqueName": "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
         "projectName": "electrigreenAPI",
-        "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
-        "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\obj\\",
+        "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreenAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -1346,11 +1346,23 @@
           }
         }
       },
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
+      },
       "electrigreen/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Common": "1.0.0",
           "LoginLibrary": "1.0.0",
+          "Perangkat": "1.0.0",
           "System.Net.Http": "4.3.4"
         },
         "compile": {
@@ -1389,6 +1401,19 @@
         },
         "runtime": {
           "bin/placeholder/LoginLibrary.dll": {}
+        }
+      },
+      "Perangkat/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Perangkat.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Perangkat.dll": {}
         }
       }
     }
@@ -4503,6 +4528,11 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
+    },
     "electrigreen/1.0.0": {
       "type": "project",
       "path": "../electrigreen/electrigreen.csproj",
@@ -4517,6 +4547,11 @@
       "type": "project",
       "path": "../LoginLibrary/LoginLibrary.csproj",
       "msbuildProject": "../LoginLibrary/LoginLibrary.csproj"
+    },
+    "Perangkat/1.0.0": {
+      "type": "project",
+      "path": "../Perangkat/Perangkat.csproj",
+      "msbuildProject": "../Perangkat/Perangkat.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4529,19 +4564,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SWIFT\\.nuget\\packages\\": {}
+    "C:\\Users\\gabri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj",
+      "projectUniqueName": "D:\\C#\\tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj",
       "projectName": "AppTesting",
-      "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj",
-      "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\obj\\",
+      "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj",
+      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+      "outputPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\AppTesting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4555,8 +4590,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj": {
-              "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj"
+            "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj": {
+              "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj"
             }
           }
         }

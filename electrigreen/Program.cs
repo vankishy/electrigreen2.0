@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using electrigreenAPI.Models;
 using System.Diagnostics.Contracts;
 using LoginLibrary;
+using System.Collections;
 
 interface IMenuState
 {
@@ -100,6 +101,10 @@ class InitialMenuState : IMenuState
             if (inputCmd == 0)
             {
                 context.ChangeState(new ExitMenuState());
+            }
+            else if (inputCmd == 1)
+            {
+                context.ChangeState(new tambahPerangkat());
             }
         }
         catch (Exception e) { }
@@ -251,10 +256,73 @@ class Login : IMenuState
         }
     }
 }
+class tambahPerangkat : IMenuState
+{
+    public void HandleOutput(MenuContext context)
+    {
+        ArrayList perangkatElektronik = new ArrayList();
+
+        while (true)
+        {
+            Console.WriteLine("Add a new electronic device:");
+            Console.Write("Nama: ");
+            string nama = Console.ReadLine();
+            Console.Write("Jenis: ");
+            string jenis = Console.ReadLine();
+            Console.Write("Merk: ");
+            string merk = Console.ReadLine();
+            Console.Write("Voltase: ");
+            int voltase = Convert.ToInt32(Console.ReadLine());
+            bool isSmarthome = false;
+
+            ElectronicsConfig config = new ElectronicsConfig();
+            Electronics electronics = new Electronics(config);
+
+            int input = -1;
+            while (input != 0)
+            {
+                if (electronics.currentState == electronicState.BelumDitambahNonSmarthome)
+                {
+                    Console.WriteLine("1. Centang Sebagai Perangkat Smarthome: ");
+                }
+                else
+                {
+                    Console.WriteLine("1. Centang Sebagai Perangkat Non-Smarthome: ");
+                }
+                Console.WriteLine("0. Tambahkan Perangkat");
+                input = Convert.ToInt32(Console.ReadLine());
+                if (input == 1)
+                {
+                    if (electronics.currentState == electronicState.BelumDitambahNonSmarthome)
+                    {
+                        electronics.ActivateTrigger(Trigger.SmarthomeTercentang);
+                        isSmarthome = true;
+                    }
+                    else
+                    {
+                        electronics.ActivateTrigger(Trigger.SmarthomeTidakTercentang);
+                        isSmarthome = false;
+                    }
+                }
+                else if (input == 0)
+                {
+                    PerangkatLibrary.PerangkatLibrary.AddPerangkat(perangkatElektronik, nama, jenis, merk, voltase, isSmarthome);
+                    break;
+                }
+            }
+
+            Console.Write("Add another device? (yes/no): ");
+            string addAnother = Console.ReadLine().ToLower();
+            if (addAnother != "yes" && addAnother != "y")
+                break;
+        }
+
+        context.ChangeState(new InitialMenuState());
+    }
+}
 
 
-
-    class Program
+class Program
 {
     private static void Main(string[] args)
     {

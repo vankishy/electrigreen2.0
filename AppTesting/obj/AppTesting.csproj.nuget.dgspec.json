@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj": {}
+    "D:\\C#\\tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj": {
+    "D:\\C#\\tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj",
+        "projectUniqueName": "D:\\C#\\tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj",
         "projectName": "AppTesting",
-        "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj",
-        "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\obj\\",
+        "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\AppTesting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj": {
-                "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj"
+              "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj": {
+                "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj"
               }
             }
           }
@@ -86,17 +86,77 @@
         }
       }
     },
-    "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {
+    "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
-        "projectName": "electrigreenAPI",
-        "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
-        "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\obj\\",
+        "projectUniqueName": "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
+        "projectName": "electrigreenAPI",
+        "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreenAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -163,17 +223,17 @@
         }
       }
     },
-    "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj": {
+    "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj",
+        "projectUniqueName": "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj",
         "projectName": "electrigreen",
-        "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj",
-        "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\obj\\",
+        "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreen\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -187,8 +247,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj": {
-                "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj"
+              "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\Common.csproj": {
+                "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\Common.csproj"
+              },
+              "D:\\C#\\tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj": {
+                "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj"
+              },
+              "D:\\C#\\tubesKPL\\electrigreen2.0\\Perangkat\\Perangkat.csproj": {
+                "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\Perangkat\\Perangkat.csproj"
               }
             }
           }
@@ -233,17 +299,17 @@
         }
       }
     },
-    "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj": {
+    "D:\\C#\\tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj",
+        "projectUniqueName": "D:\\C#\\tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj",
         "projectName": "LoginLibrary",
-        "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj",
-        "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\obj\\",
+        "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\LoginLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -257,8 +323,72 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {
-                "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj"
+              "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {
+                "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\C#\\tubesKPL\\electrigreen2.0\\Perangkat\\Perangkat.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C#\\tubesKPL\\electrigreen2.0\\Perangkat\\Perangkat.csproj",
+        "projectName": "Perangkat",
+        "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\Perangkat\\Perangkat.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\Perangkat\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\Common.csproj": {
+                "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\Common.csproj"
               }
             }
           }
