@@ -173,7 +173,7 @@ class Register : IMenuState
     }
 }
 
-class Login : IMenuState
+public class Login : IMenuState
 {
     private readonly AuthManager _authManager;
 
@@ -182,7 +182,7 @@ class Login : IMenuState
         _authManager = authManager;
     }
 
-    public async void HandleOutput(MenuContext context)
+    async void IMenuState.HandleOutput(MenuContext context)
     {
         using (HttpClient httpClient = new HttpClient())
         {
@@ -215,7 +215,7 @@ class Login : IMenuState
 
         context.ChangeState(new InitialMenuState());
     }
-    private async Task<bool> AuthenticateWithAPI(string email, string password)
+    public async Task<bool> AuthenticateWithAPI(string email, string password)
     {
         using (HttpClient httpClient = new HttpClient())
         {

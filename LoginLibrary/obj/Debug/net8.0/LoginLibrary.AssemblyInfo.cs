@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoginLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3229e379b72147d125e839d46c342d8cb4b1f4f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+144d2eb1a546cfd541e5e0dc5c17f4d78c31120e")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoginLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoginLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

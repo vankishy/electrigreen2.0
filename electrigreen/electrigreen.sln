@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "electrigreen", "electrigree
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "electrigreenAPI", "..\electrigreenAPI\electrigreenAPI.csproj", "{0C262FCF-8614-4840-A81B-4D7C494229D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginLibrary", "..\LoginLibrary\LoginLibrary.csproj", "{94C12747-217D-4E3C-929D-7D65830EF72F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginLibrary", "..\LoginLibrary\LoginLibrary.csproj", "{94C12747-217D-4E3C-929D-7D65830EF72F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingLogin", "..\TestingLogin\TestingLogin.csproj", "{C3E9D7CE-5D47-4125-A0D2-03AE082B71E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{94C12747-217D-4E3C-929D-7D65830EF72F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94C12747-217D-4E3C-929D-7D65830EF72F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94C12747-217D-4E3C-929D-7D65830EF72F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E9D7CE-5D47-4125-A0D2-03AE082B71E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E9D7CE-5D47-4125-A0D2-03AE082B71E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E9D7CE-5D47-4125-A0D2-03AE082B71E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E9D7CE-5D47-4125-A0D2-03AE082B71E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

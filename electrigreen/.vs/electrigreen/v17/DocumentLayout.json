@@ -3,28 +3,34 @@
   "WorkspaceRootPath": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\electrigreen\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C3E9D7CE-5D47-4125-A0D2-03AE082B71E5}|..\\TestingLogin\\TestingLogin.csproj|d:\\kuliah universitas telkom\\semester4\\kpl\\electricgreen2.0\\electrigreen2.0\\testinglogin\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\electrigreen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94C12747-217D-4E3C-929D-7D65830EF72F}|..\\LoginLibrary\\LoginLibrary.csproj|d:\\kuliah universitas telkom\\semester4\\kpl\\electricgreen2.0\\electrigreen2.0\\loginlibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C262FCF-8614-4840-A81B-4D7C494229D1}|..\\electrigreenAPI\\electrigreenAPI.csproj|d:\\kuliah universitas telkom\\semester4\\kpl\\electricgreen2.0\\electrigreen2.0\\electrigreenapi\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3E9D7CE-5D47-4125-A0D2-03AE082B71E5}|..\\TestingLogin\\TestingLogin.csproj|d:\\kuliah universitas telkom\\semester4\\kpl\\electricgreen2.0\\electrigreen2.0\\testinglogin\\testinglogin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\electrigreen\\electrigreen.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|solutionrelative:electrigreen.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0C262FCF-8614-4840-A81B-4D7C494229D1}|..\\electrigreenAPI\\electrigreenAPI.csproj|d:\\kuliah universitas telkom\\semester4\\kpl\\electricgreen2.0\\electrigreen2.0\\electrigreenapi\\electrigreenapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{94C12747-217D-4E3C-929D-7D65830EF72F}|..\\LoginLibrary\\LoginLibrary.csproj|d:\\kuliah universitas telkom\\semester4\\kpl\\electricgreen2.0\\electrigreen2.0\\loginlibrary\\loginlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|d:\\kuliah universitas telkom\\semester4\\kpl\\electricgreen2.0\\electrigreen2.0\\electrigreen\\electrigreen.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|solutionrelative:electrigreen.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94C12747-217D-4E3C-929D-7D65830EF72F}|..\\LoginLibrary\\LoginLibrary.csproj|d:\\kuliah universitas telkom\\semester4\\kpl\\electricgreen2.0\\electrigreen2.0\\loginlibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|d:\\kuliah universitas telkom\\semester4\\kpl\\electricgreen2.0\\electrigreen2.0\\electrigreen\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\electrigreen\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|solutionrelative:register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C262FCF-8614-4840-A81B-4D7C494229D1}|..\\electrigreenAPI\\electrigreenAPI.csproj|d:\\kuliah universitas telkom\\semester4\\kpl\\electricgreen2.0\\electrigreen2.0\\electrigreenapi\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|d:\\kuliah universitas telkom\\semester4\\kpl\\electricgreen2.0\\electrigreen2.0\\electrigreen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,25 +40,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TestingLogin",
+              "DocumentMoniker": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\TestingLogin\\TestingLogin.csproj",
+              "RelativeDocumentMoniker": "..\\TestingLogin\\TestingLogin.csproj",
+              "ToolTip": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\TestingLogin\\TestingLogin.csproj",
+              "RelativeToolTip": "..\\TestingLogin\\TestingLogin.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-06T13:52:13.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "electrigreenAPI",
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\TestingLogin\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\TestingLogin\\UnitTest1.cs",
+              "ToolTip": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\TestingLogin\\UnitTest1.cs",
+              "RelativeToolTip": "..\\TestingLogin\\UnitTest1.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T13:52:05.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "electrigreenAPI.csproj",
               "DocumentMoniker": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
               "RelativeDocumentMoniker": "..\\electrigreenAPI\\electrigreenAPI.csproj",
               "ToolTip": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
               "RelativeToolTip": "..\\electrigreenAPI\\electrigreenAPI.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-05-05T12:13:38.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginLibrary",
+              "DocumentIndex": 7,
+              "Title": "LoginLibrary.csproj",
               "DocumentMoniker": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj",
               "RelativeDocumentMoniker": "..\\LoginLibrary\\LoginLibrary.csproj",
               "ToolTip": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj",
@@ -64,33 +96,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "electrigreen",
+              "DocumentIndex": 5,
+              "Title": "electrigreen.csproj",
               "DocumentMoniker": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\electrigreen\\electrigreen.csproj",
               "RelativeDocumentMoniker": "electrigreen.csproj",
               "ToolTip": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\electrigreen\\electrigreen.csproj",
               "RelativeToolTip": "electrigreen.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-05-05T11:52:16.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\LoginLibrary\\Class1.cs",
               "RelativeDocumentMoniker": "..\\LoginLibrary\\Class1.cs",
               "ToolTip": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\LoginLibrary\\Class1.cs",
               "RelativeToolTip": "..\\LoginLibrary\\Class1.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAmwAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T11:39:56.36Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Register.cs",
               "DocumentMoniker": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\electrigreen\\Register.cs",
               "RelativeDocumentMoniker": "Register.cs",
@@ -103,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "RegisterController.cs",
               "DocumentMoniker": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\electrigreenAPI\\Controllers\\RegisterController.cs",
               "RelativeDocumentMoniker": "..\\electrigreenAPI\\Controllers\\RegisterController.cs",
@@ -116,13 +148,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\electrigreen\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Kuliah Universitas Telkom\\Semester4\\KPL\\electricgreen2.0\\electrigreen2.0\\electrigreen\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAK8AAAAAAAAAAAA2wLQAAAAFAAAA",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAmwNkAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T02:23:57.692Z",
               "EditorCaption": ""
