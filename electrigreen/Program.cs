@@ -11,8 +11,10 @@ using System.Threading.Tasks;
 using electrigreenAPI.Models;
 using System.Diagnostics.Contracts;
 using LoginLibrary;
+using System.Text.RegularExpressions;
+using Spectre.Console;
 
-interface IMenuState
+interface IMenuState 
 {
     public void HandleOutput(MenuContext context);
 }
@@ -63,14 +65,18 @@ class AuthScreen : IMenuState
             } 
             else if (inputCmd == 2)
             {
-                context.ChangeState(new Register());
+                context.ChangeState(new RegisterState());
                 
             } else if (inputCmd == 1)
             {
                 context.ChangeState(new Login(new AuthManager(new List<RegisterModel>())));
             }
         }
-        catch (Exception e) { }
+        catch (Exception e) {
+            Console.WriteLine("Input hrus berupa angka!");
+            Console.Clear();
+            
+        }
     }
 }
 
@@ -115,33 +121,46 @@ class ExitMenuState : IMenuState
     }
 }
 
-class Register : IMenuState
+class RegisterState : IMenuState
 {
     public void HandleOutput(MenuContext context)
     {
-        Reg();
+        Register();
         Console.Clear();
         context.ChangeState(new AuthScreen());
     }
-    public async void Reg()
+
+    public static bool isValidName(string nama)
+    {
+        Regex check = new Regex("^[a-zA-Z]+$");
+        return check.IsMatch(nama);
+    }
+    public async void Register()
     {
         HttpClient httpClient = new HttpClient();
         httpClient.BaseAddress = new Uri("http://localhost:5107");
 
         Console.Write("Nama: ");
         string nama = Console.ReadLine();
+        while (!isValidName(nama))
+        {
+            Console.WriteLine("Nama hanya terdiri dari huruf");
+            Console.Write("Nama: ");
+            nama = Console.ReadLine();
+        }
         Contract.Requires(!string.IsNullOrWhiteSpace(nama), "Nama tidak boleh kosong");
 
         Console.Write("Email: ");
         string email = Console.ReadLine();
         Contract.Requires(!string.IsNullOrWhiteSpace(email), "Email tidak boleh kosong");
 
-        Console.Write("Password: ");
-        string password = Console.ReadLine();
+        string password = AnsiConsole.Prompt(new TextPrompt<string>("Password: ")
+            .Secret());
         Contract.Requires(!string.IsNullOrWhiteSpace(password), "Password tidak boleh kosong");
 
-        Console.Write("Konfirmasi Password: ");
-        string passConfirm = Console.ReadLine();
+
+        string passConfirm = AnsiConsole.Prompt(new TextPrompt<string>("Konfirmasi Password: ")
+            .Secret());
         Contract.Requires(!string.IsNullOrWhiteSpace(passConfirm), "Konfirmasi Password tidak boleh kosong");
 
         while (password != passConfirm)
@@ -206,8 +225,8 @@ class Login : IMenuState
             {
                 Console.Write("Email: ");
                 string email = Console.ReadLine();
-                Console.Write("Password: ");
-                string password = Console.ReadLine();
+                string password = AnsiConsole.Prompt(new TextPrompt<string>("Password: ")
+                    .Secret());
 
                 var isAuthenticated = await AuthenticateWithAPI(email, password);
 
@@ -271,9 +290,5 @@ class Login : IMenuState
         {
             Console.WriteLine("Sepertinya ada masalah: {0}", e.Message);
         }
-        
-
-        /*Console.WriteLine("\nAkun Terdaftar:");
-        register.DisplayAccounts();*/
     }
 }
