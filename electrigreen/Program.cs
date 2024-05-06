@@ -250,7 +250,7 @@ class Login : IMenuState
             }
         }
     }
-    private async Task<bool> AuthenticateWithAPI(string email, string password)
+    public async Task<bool> AuthenticateWithAPI(string email, string password)
     {
         using (HttpClient httpClient = new HttpClient())
         {
