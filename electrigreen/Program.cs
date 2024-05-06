@@ -125,7 +125,7 @@ class Register : IMenuState
 
         while (password != passConfirm)
         {
-            Console.WriteLine("Try Again!");
+            Console.WriteLine("Password salah! Coba lagi.");
         }
 
         User createUser = new User { Nama = nama, Email = email, Password = password };
@@ -152,16 +152,18 @@ class Register : IMenuState
             {
                 Console.WriteLine("Failed to Register, Error : " + resMessage.StatusCode);
             }
-            Console.Clear();
-            context.ChangeState(new AuthScreen());
         }
 
+        Console.Clear();
+        context.ChangeState(new AuthScreen());
+    }  
+}
 
+class Login : IMenuState
+{
+    public async void HandleOutput(MenuContext context)
+    {
 
-        //register.RegisterNewAccount(fieldAccount, password, passConfirm);
-
-        //Console.Clear();
-        //context.ChangeState(new InitialMenuState());
     }
 }
 

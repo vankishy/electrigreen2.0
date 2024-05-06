@@ -40,26 +40,17 @@ namespace electrigreenAPI.Controllers
             System.IO.File.WriteAllText(filePath, json);
         }
 
-        [HttpGet("{nama}")]
-        public IActionResult GetUserbyName(string nama)
+        [HttpGet]
+        public IActionResult GetUser()
         {
             if (_users.Count == 0)
             {
-                return Ok("Data tidak ada");
+                return Ok("Data kosong!!");
             }
 
-            foreach (RegisterModel user in _users)
-            {
-                if (user.nama == nama)
-                {
-                    return Ok(user);
-                }
-            }
-            return Ok("Data tidak ada");
+            return Ok(_users);
         }
     
-
-
         [HttpPost("register")]
         public IActionResult Register(RegisterModel model)
         {
@@ -73,28 +64,6 @@ namespace electrigreenAPI.Controllers
             return Ok("Akun terdaftar");
         }
 
-        /*[HttpPost("login")]
-        public IActionResult Login(LoginModel model)
-        {
-            var user = _users.FirstOrDefault(u => u.Email == model.Email && u.Password == model.Password);
-            if (user == null)
-            {
-                return NotFound("Email atau password salah.");
-            }
-
-            return Ok(user);
-        }*/
-
-        /*[HttpGet("{id}")]
-        public IActionResult GetUserById(Guid id)
-        {
-            var user = _users.FirstOrDefault(u => u.Id == id);
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(user);
-        }*/
+        //[HttpPost("login")]    
     }
 }
