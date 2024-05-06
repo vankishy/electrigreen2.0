@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj": {}
+    "D:\\TUBES BARU\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {
+    "D:\\TUBES BARU\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
+        "projectUniqueName": "D:\\TUBES BARU\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
         "projectName": "electrigreenAPI",
-        "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
-        "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\obj\\",
+        "projectPath": "D:\\TUBES BARU\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
+        "packagesPath": "C:\\Users\\whoskiiyy\\.nuget\\packages\\",
+        "outputPath": "D:\\TUBES BARU\\electrigreen2.0\\electrigreenAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\whoskiiyy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,21 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj": {
+    "D:\\TUBES BARU\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj",
+        "projectUniqueName": "D:\\TUBES BARU\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj",
         "projectName": "LoginLibrary",
-        "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj",
-        "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\obj\\",
+        "projectPath": "D:\\TUBES BARU\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj",
+        "packagesPath": "C:\\Users\\whoskiiyy\\.nuget\\packages\\",
+        "outputPath": "D:\\TUBES BARU\\electrigreen2.0\\LoginLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\whoskiiyy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,8 +105,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {
-                "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj"
+              "D:\\TUBES BARU\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {
+                "projectPath": "D:\\TUBES BARU\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj"
               }
             }
           }
@@ -141,7 +141,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -4529,19 +4529,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SWIFT\\.nuget\\packages\\": {}
+    "C:\\Users\\whoskiiyy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj",
+      "projectUniqueName": "D:\\TUBES BARU\\electrigreen2.0\\AppTesting\\AppTesting.csproj",
       "projectName": "AppTesting",
-      "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj",
-      "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\obj\\",
+      "projectPath": "D:\\TUBES BARU\\electrigreen2.0\\AppTesting\\AppTesting.csproj",
+      "packagesPath": "C:\\Users\\whoskiiyy\\.nuget\\packages\\",
+      "outputPath": "D:\\TUBES BARU\\electrigreen2.0\\AppTesting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\whoskiiyy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4555,8 +4555,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj": {
-              "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj"
+            "D:\\TUBES BARU\\electrigreen2.0\\electrigreen\\electrigreen.csproj": {
+              "projectPath": "D:\\TUBES BARU\\electrigreen2.0\\electrigreen\\electrigreen.csproj"
             }
           }
         }
@@ -4609,7 +4609,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
