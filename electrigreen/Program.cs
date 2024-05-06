@@ -13,6 +13,7 @@ using System.Diagnostics.Contracts;
 using LoginLibrary;
 using System.Text.RegularExpressions;
 using Spectre.Console;
+using System.Collections;
 
 interface IMenuState 
 {
