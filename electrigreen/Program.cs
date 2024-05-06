@@ -2,10 +2,14 @@
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Reflection;
 using System.Reflection.Metadata;
 using System.Runtime.CompilerServices;
 using System.Text;
-
+using System.Text.Json;
+using System.Threading.Tasks;
+using electrigreenAPI.Authentication;
+using electrigreenAPI.Models;
 interface IMenuState
 {
     public void HandleOutput(MenuContext context);
@@ -58,6 +62,10 @@ class AuthScreen : IMenuState
             else if (inputCmd == 2)
             {
                 context.ChangeState(new Register());
+                
+            } else if (inputCmd == 1)
+            {
+                context.ChangeState(new Login(new AuthManager(new List<RegisterModel>())));
             }
         }
         catch (Exception e) { }
@@ -161,14 +169,75 @@ class Register : IMenuState
 
 class Login : IMenuState
 {
+    private readonly AuthManager _authManager;
+
+    public Login(AuthManager authManager)
+    {
+        _authManager = authManager;
+    }
+
     public async void HandleOutput(MenuContext context)
     {
+        using (HttpClient httpClient = new HttpClient())
+        {
+           
+            httpClient.BaseAddress = new Uri("http://localhost:5107");
 
+            try
+            {
+                Console.Write("Email: ");
+                string email = Console.ReadLine();
+                Console.Write("Password: ");
+                string password = Console.ReadLine();
+
+                var isAuthenticated = await AuthenticateWithAPI(email, password);
+
+                if (isAuthenticated)
+                {
+                    Console.WriteLine("Welcome: " + email);
+                }
+                else
+                {
+                    Console.WriteLine("Failed to Login, Email or Password is incorrect.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred: " + ex.Message);
+            }
+        }
+
+        context.ChangeState(new InitialMenuState());
+    }
+    private async Task<bool> AuthenticateWithAPI(string email, string password)
+    {
+        using (HttpClient httpClient = new HttpClient())
+        {
+            httpClient.BaseAddress = new Uri("http://localhost:5107");
+
+            var loginUser = new LoginModel { email = email, password = password };
+
+            HttpResponseMessage resMessage = await httpClient.PostAsJsonAsync("api/Register/login", loginUser);
+
+            if (resMessage.IsSuccessStatusCode)
+            {
+                return true;
+            }
+            else if (resMessage.StatusCode == System.Net.HttpStatusCode.BadRequest)
+            {
+                return false;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
 
 
-class Program
+
+    class Program
 {
     private static void Main(string[] args)
     {
