@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\Common.csproj": {}
+    "C:\\Users\\SWIFT\\Documents\\foodshare\\Common\\Common.csproj": {}
   },
   "projects": {
-    "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\Common.csproj": {
+    "C:\\Users\\SWIFT\\Documents\\foodshare\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\foodshare\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\obj\\",
+        "projectPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -1032,19 +1032,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabri\\.nuget\\packages\\": {}
+    "C:\\Users\\SWIFT\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\tubesKPL\\electrigreen2.0\\UnitTestingAdd\\UnitTestingAdd.csproj",
+      "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\foodshare\\UnitTestingAdd\\UnitTestingAdd.csproj",
       "projectName": "UnitTestingAdd",
-      "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\UnitTestingAdd\\UnitTestingAdd.csproj",
-      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\UnitTestingAdd\\obj\\",
+      "projectPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\UnitTestingAdd\\UnitTestingAdd.csproj",
+      "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\UnitTestingAdd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1058,11 +1058,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\Common.csproj": {
-              "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\Common\\Common.csproj"
+            "C:\\Users\\SWIFT\\Documents\\foodshare\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\Common\\Common.csproj"
             },
-            "D:\\C#\\tubesKPL\\electrigreen2.0\\Perangkat\\Perangkat.csproj": {
-              "projectPath": "D:\\C#\\tubesKPL\\electrigreen2.0\\Perangkat\\Perangkat.csproj"
+            "C:\\Users\\SWIFT\\Documents\\foodshare\\Perangkat\\Perangkat.csproj": {
+              "projectPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\Perangkat\\Perangkat.csproj"
             }
           }
         }

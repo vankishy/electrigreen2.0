@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AppTesting
-build_property.ProjectDir = D:\C#\tubesKPL\electrigreen2.0\AppTesting\
+build_property.ProjectDir = C:\Users\SWIFT\Documents\foodshare\AppTesting\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
