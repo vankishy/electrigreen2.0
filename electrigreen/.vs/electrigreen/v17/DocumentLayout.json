@@ -3,17 +3,17 @@
   "WorkspaceRootPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C262FCF-8614-4840-A81B-4D7C494229D1}|..\\electrigreenAPI\\electrigreenAPI.csproj|C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenapi\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FE04617-F897-4000-BFA1-56F8141E7D62}|..\\AppTesting\\AppTesting.csproj|c:\\users\\swift\\documents\\electrigreen2.0-tubeskpl\\electrigreen2.0\\apptesting\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C262FCF-8614-4840-A81B-4D7C494229D1}|..\\electrigreenAPI\\electrigreenAPI.csproj|c:\\users\\swift\\documents\\electrigreen2.0-tubeskpl\\electrigreen2.0\\electrigreenapi\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C262FCF-8614-4840-A81B-4D7C494229D1}|..\\electrigreenAPI\\electrigreenAPI.csproj|C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenapi\\models\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FE04617-F897-4000-BFA1-56F8141E7D62}|..\\AppTesting\\AppTesting.csproj|c:\\users\\swift\\documents\\electrigreen2.0-tubeskpl\\electrigreen2.0\\apptesting\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEDB8FB2-FD2F-4335-BE80-9AE70F00FC0C}|electrigreen.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,7 +23,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,52 +31,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\UnitTest1.cs",
               "RelativeDocumentMoniker": "..\\AppTesting\\UnitTest1.cs",
               "ToolTip": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\UnitTest1.cs",
               "RelativeToolTip": "..\\AppTesting\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T03:25:15.548Z",
+              "WhenOpened": "2024-05-06T04:46:32.232Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAGwAAAAAAAAAAAAIwHEAAAAcAAAA",
+              "ViewState": "AQIAAJsAAAAAAAAAAAAmwKcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T03:08:24.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T03:08:24.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "RegisterModel.cs",
               "DocumentMoniker": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\Models\\RegisterModel.cs",
               "RelativeDocumentMoniker": "..\\electrigreenAPI\\Models\\RegisterModel.cs",
               "ToolTip": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\Models\\RegisterModel.cs",
               "RelativeToolTip": "..\\electrigreenAPI\\Models\\RegisterModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T03:07:39.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RegisterController.cs",
               "DocumentMoniker": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\Controllers\\RegisterController.cs",
               "RelativeDocumentMoniker": "..\\electrigreenAPI\\Controllers\\RegisterController.cs",
               "ToolTip": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\Controllers\\RegisterController.cs",
               "RelativeToolTip": "..\\electrigreenAPI\\Controllers\\RegisterController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T03:06:01.352Z",
               "EditorCaption": ""
