@@ -63,7 +63,7 @@ namespace electrigreenAPI.Controllers
             SaveRecord();
             return Ok("Akun terdaftar");
         }
-
+    
         [HttpPost("Login")]
 
         public IActionResult Login(LoginModel model)

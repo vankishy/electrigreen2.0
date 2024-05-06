@@ -11,8 +11,11 @@ using System.Threading.Tasks;
 using electrigreenAPI.Models;
 using System.Diagnostics.Contracts;
 using LoginLibrary;
+using System.Text.RegularExpressions;
+using Spectre.Console;
+using System.Collections;
 
-interface IMenuState
+interface IMenuState 
 {
     public void HandleOutput(MenuContext context);
 }
@@ -63,14 +66,18 @@ class AuthScreen : IMenuState
             } 
             else if (inputCmd == 2)
             {
-                context.ChangeState(new Register());
+                context.ChangeState(new RegisterState());
                 
             } else if (inputCmd == 1)
             {
                 context.ChangeState(new Login(new AuthManager(new List<RegisterModel>())));
             }
         }
-        catch (Exception e) { }
+        catch (Exception e) {
+            Console.WriteLine("Input hrus berupa angka!");
+            Console.Clear();
+            
+        }
     }
 }
 
@@ -101,6 +108,10 @@ class InitialMenuState : IMenuState
             {
                 context.ChangeState(new ExitMenuState());
             }
+            else if (inputCmd == 1)
+            {
+                context.ChangeState(new tambahPerangkat());
+            }
         }
         catch (Exception e) { }
     }
@@ -115,33 +126,46 @@ class ExitMenuState : IMenuState
     }
 }
 
-class Register : IMenuState
+class RegisterState : IMenuState
 {
     public void HandleOutput(MenuContext context)
     {
-        Reg();
+        Register();
         Console.Clear();
         context.ChangeState(new AuthScreen());
     }
-    public async void Reg()
+
+    public static bool isValidName(string nama)
+    {
+        Regex check = new Regex("^[a-zA-Z]+$");
+        return check.IsMatch(nama);
+    }
+    public async void Register()
     {
         HttpClient httpClient = new HttpClient();
         httpClient.BaseAddress = new Uri("http://localhost:5107");
 
         Console.Write("Nama: ");
         string nama = Console.ReadLine();
+        while (!isValidName(nama))
+        {
+            Console.WriteLine("Nama hanya terdiri dari huruf");
+            Console.Write("Nama: ");
+            nama = Console.ReadLine();
+        }
         Contract.Requires(!string.IsNullOrWhiteSpace(nama), "Nama tidak boleh kosong");
 
         Console.Write("Email: ");
         string email = Console.ReadLine();
         Contract.Requires(!string.IsNullOrWhiteSpace(email), "Email tidak boleh kosong");
 
-        Console.Write("Password: ");
-        string password = Console.ReadLine();
+        string password = AnsiConsole.Prompt(new TextPrompt<string>("Password: ")
+            .Secret());
         Contract.Requires(!string.IsNullOrWhiteSpace(password), "Password tidak boleh kosong");
 
-        Console.Write("Konfirmasi Password: ");
-        string passConfirm = Console.ReadLine();
+
+        string passConfirm = AnsiConsole.Prompt(new TextPrompt<string>("Konfirmasi Password: ")
+            .Secret());
         Contract.Requires(!string.IsNullOrWhiteSpace(passConfirm), "Konfirmasi Password tidak boleh kosong");
 
         while (password != passConfirm)
@@ -206,8 +230,8 @@ class Login : IMenuState
             {
                 Console.Write("Email: ");
                 string email = Console.ReadLine();
-                Console.Write("Password: ");
-                string password = Console.ReadLine();
+                string password = AnsiConsole.Prompt(new TextPrompt<string>("Password: ")
+                    .Secret());
 
                 var isAuthenticated = await AuthenticateWithAPI(email, password);
 
@@ -251,10 +275,73 @@ class Login : IMenuState
         }
     }
 }
+class tambahPerangkat : IMenuState
+{
+    public void HandleOutput(MenuContext context)
+    {
+        ArrayList perangkatElektronik = new ArrayList();
+
+        while (true)
+        {
+            Console.WriteLine("Add a new electronic device:");
+            Console.Write("Nama: ");
+            string nama = Console.ReadLine();
+            Console.Write("Jenis: ");
+            string jenis = Console.ReadLine();
+            Console.Write("Merk: ");
+            string merk = Console.ReadLine();
+            Console.Write("Voltase: ");
+            int voltase = Convert.ToInt32(Console.ReadLine());
+            bool isSmarthome = false;
+
+            ElectronicsConfig config = new ElectronicsConfig();
+            Electronics electronics = new Electronics(config);
+
+            int input = -1;
+            while (input != 0)
+            {
+                if (electronics.currentState == electronicState.BelumDitambahNonSmarthome)
+                {
+                    Console.WriteLine("1. Centang Sebagai Perangkat Smarthome: ");
+                }
+                else
+                {
+                    Console.WriteLine("1. Centang Sebagai Perangkat Non-Smarthome: ");
+                }
+                Console.WriteLine("0. Tambahkan Perangkat");
+                input = Convert.ToInt32(Console.ReadLine());
+                if (input == 1)
+                {
+                    if (electronics.currentState == electronicState.BelumDitambahNonSmarthome)
+                    {
+                        electronics.ActivateTrigger(Trigger.SmarthomeTercentang);
+                        isSmarthome = true;
+                    }
+                    else
+                    {
+                        electronics.ActivateTrigger(Trigger.SmarthomeTidakTercentang);
+                        isSmarthome = false;
+                    }
+                }
+                else if (input == 0)
+                {
+                    PerangkatLibrary.PerangkatLibrary.AddPerangkat(perangkatElektronik, nama, jenis, merk, voltase, isSmarthome);
+                    break;
+                }
+            }
+
+            Console.Write("Add another device? (yes/no): ");
+            string addAnother = Console.ReadLine().ToLower();
+            if (addAnother != "yes" && addAnother != "y")
+                break;
+        }
+
+        context.ChangeState(new InitialMenuState());
+    }
+}
 
 
-
-    class Program
+class Program
 {
     private static void Main(string[] args)
     {
@@ -271,9 +358,5 @@ class Login : IMenuState
         {
             Console.WriteLine("Sepertinya ada masalah: {0}", e.Message);
         }
-        
-
-        /*Console.WriteLine("\nAkun Terdaftar:");
-        register.DisplayAccounts();*/
     }
 }
