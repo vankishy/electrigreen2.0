@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj": {}
+    "C:\\Users\\SWIFT\\Documents\\foodshare\\LoginLibrary\\LoginLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {
+    "C:\\Users\\SWIFT\\Documents\\foodshare\\electrigreenAPI\\electrigreenAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
+        "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\foodshare\\electrigreenAPI\\electrigreenAPI.csproj",
         "projectName": "electrigreenAPI",
-        "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
+        "projectPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\electrigreenAPI\\electrigreenAPI.csproj",
         "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\obj\\",
+        "outputPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\electrigreenAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj": {
+    "C:\\Users\\SWIFT\\Documents\\foodshare\\LoginLibrary\\LoginLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\foodshare\\LoginLibrary\\LoginLibrary.csproj",
         "projectName": "LoginLibrary",
-        "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\LoginLibrary.csproj",
+        "projectPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\LoginLibrary\\LoginLibrary.csproj",
         "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\LoginLibrary\\obj\\",
+        "outputPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\LoginLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -105,8 +105,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj": {
-                "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj"
+              "C:\\Users\\SWIFT\\Documents\\foodshare\\electrigreenAPI\\electrigreenAPI.csproj": {
+                "projectPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\electrigreenAPI\\electrigreenAPI.csproj"
               }
             }
           }

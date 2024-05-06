@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y7YATbOPywi66aWBE17tVzecrYvjJvGCzopYziNzlF4jGW67CwpH7ivIBLMbcXpAGIW9mqTHeQYtveEj6u/uKQ==",
+  "dgSpecHash": "vYj1vxPw5u/LhR7vsOnFzc4TFk3g4TmAm+WPWde9pFKiKtqtkv84ax0cRlL5I4BuIbGI730MN0istU+ZgeHY1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
+  "projectFilePath": "C:\\Users\\SWIFT\\Documents\\foodshare\\electrigreenAPI\\electrigreenAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SWIFT\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.4\\microsoft.aspnetcore.jsonpatch.8.0.4.nupkg.sha512",
     "C:\\Users\\SWIFT\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\8.0.4\\microsoft.aspnetcore.mvc.newtonsoftjson.8.0.4.nupkg.sha512",

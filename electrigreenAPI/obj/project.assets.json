@@ -665,11 +665,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
+      "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\foodshare\\electrigreenAPI\\electrigreenAPI.csproj",
       "projectName": "electrigreenAPI",
-      "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\electrigreenAPI.csproj",
+      "projectPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\electrigreenAPI\\electrigreenAPI.csproj",
       "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreenAPI\\obj\\",
+      "outputPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\electrigreenAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",

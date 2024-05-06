@@ -4534,11 +4534,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj",
+      "projectUniqueName": "C:\\Users\\SWIFT\\Documents\\foodshare\\AppTesting\\AppTesting.csproj",
       "projectName": "AppTesting",
-      "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\AppTesting.csproj",
+      "projectPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\AppTesting\\AppTesting.csproj",
       "packagesPath": "C:\\Users\\SWIFT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\AppTesting\\obj\\",
+      "outputPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\AppTesting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SWIFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4555,8 +4555,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj": {
-              "projectPath": "C:\\Users\\SWIFT\\Documents\\electrigreen2.0-tubesKPL\\electrigreen2.0\\electrigreen\\electrigreen.csproj"
+            "C:\\Users\\SWIFT\\Documents\\foodshare\\electrigreen\\electrigreen.csproj": {
+              "projectPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\electrigreen\\electrigreen.csproj"
             }
           }
         }
