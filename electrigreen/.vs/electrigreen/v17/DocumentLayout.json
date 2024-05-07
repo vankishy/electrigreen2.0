@@ -1,11 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\SWIFT\\Documents\\foodshare\\electrigreen\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\SWIFT\\Documents\\foodshare\\LoginLibrary\\obj\\Release\\net8.0\\LoginLibrary.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -13,24 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginLibrary.AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\SWIFT\\Documents\\foodshare\\LoginLibrary\\obj\\Release\\net8.0\\LoginLibrary.AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "..\\LoginLibrary\\obj\\Release\\net8.0\\LoginLibrary.AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\SWIFT\\Documents\\foodshare\\LoginLibrary\\obj\\Release\\net8.0\\LoginLibrary.AssemblyInfo.cs",
-              "RelativeToolTip": "..\\LoginLibrary\\obj\\Release\\net8.0\\LoginLibrary.AssemblyInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T17:11:00.015Z",
-              "EditorCaption": ""
             }
           ]
         }

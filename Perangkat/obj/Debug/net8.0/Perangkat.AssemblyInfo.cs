@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Perangkat")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36096af504a9cdf2124726e6238e92a5db051412")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+431b17c517abd9cefea19424c97716b29f9fe65a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Perangkat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Perangkat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
