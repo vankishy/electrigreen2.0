@@ -50,10 +50,30 @@ namespace electrigreenAPI.Controllers
 
             return Ok(_users);
         }
-    
+
         [HttpPost("register")]
         public IActionResult Register(RegisterModel model)
         {
+            if (model == null)
+            {
+                throw new ArgumentNullException(nameof(model));
+            }
+
+            if (string.IsNullOrWhiteSpace(model.nama))
+            {
+                throw new ArgumentException("Nama harus diisi terlebih dahulu!!", nameof(model.nama));
+            }
+
+            if (string.IsNullOrWhiteSpace(model.email))
+            {
+                throw new ArgumentException("Email wajib diisi!!", nameof(model.email));
+            }
+
+            if (string.IsNullOrWhiteSpace(model.password))
+            {
+                throw new ArgumentException("Password harus diisi", nameof(model.password));
+            }
+
             if (_users.Any(u => u.email == model.email))
             {
                 return Conflict("hasBeenUsed");
@@ -61,9 +81,14 @@ namespace electrigreenAPI.Controllers
 
             _users.Add(model);
             SaveRecord();
+
+            if (!_users.Contains(model))
+            {
+                throw new Exception("Registrasi gagal");
+            }
             return Ok("Akun terdaftar");
         }
-    
+
         [HttpPost("Login")]
 
         public IActionResult Login(LoginModel model)
